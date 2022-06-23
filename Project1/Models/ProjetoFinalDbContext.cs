@@ -8,6 +8,7 @@ namespace Project1.Models
 {
     public class ProjetoFinalDbContext : DbContext
     {
+        public DbSet<Usuario> Usuarios { get; set; }
         public ProjetoFinalDbContext(DbContextOptions<ProjetoFinalDbContext> options) : base(options)
         {
 
